@@ -1,17 +1,17 @@
-##Developer Info
+## Developer Info
 
 Ensure the Java Compiler is compatible for Java 8, and the server is Tomcat 9. 
 
 URL - http://localhost:8080/TransactionProject/
 
-##Usage Info
+## Usage Info
 
 Use browser/eclipse for the best interactive experience.
 Login - admin/admin
 
-##Documentation
+## Documentation
 
-###Get Transactions Filtered by given parameters
+### Get Transactions Filtered by given parameters
 
 **URL** : TransactionProject/v1/current-accounts/{accountId}/transactions
 
@@ -21,7 +21,7 @@ Login - admin/admin
 
 **Path Variables** : accountId
 
-**Re	quest Parameters** :
+**Request Parameters** :
 
 value = "length", required = true - Number of transactions to be returned(was unsure what this value meant)  
 value = "sort", required = true  - The field to be sorted by(was unable to implement this. only sorts by 'transactionAmount')  
@@ -74,7 +74,7 @@ http://localhost:8080/TransactionProject/v1/current-accounts/savings-kids-john/t
 } 
 ```
 
-###Get Transactions By Type
+### Get Transactions By Type
 
 
 **URL** : TransactionProject/v1/current-accounts/savings-kids-john/getFilteredTransactions
@@ -130,7 +130,7 @@ http://localhost:8080/TransactionProject/v1/current-accounts/savings-kids-john/g
  }
  ```
       
-###Get Total Transaction Amount For Type
+### Get Total Transaction Amount For Type
 
 
 **URL** : TransactionProject/v1/current-accounts/savings-kids-john/getTotalAmountForType
